@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BungieNetPlatform", "BungieNetPlatform\BungieNetPlatform.csproj", "{025DAC8F-6560-49B4-ADAF-456802A32B79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{57A77442-2563-44BC-826C-259A95FF6C5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{025DAC8F-6560-49B4-ADAF-456802A32B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{025DAC8F-6560-49B4-ADAF-456802A32B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{025DAC8F-6560-49B4-ADAF-456802A32B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A77442-2563-44BC-826C-259A95FF6C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A77442-2563-44BC-826C-259A95FF6C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A77442-2563-44BC-826C-259A95FF6C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A77442-2563-44BC-826C-259A95FF6C5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
