@@ -9,7 +9,6 @@ using BungieNetPlatform.Enums;
 namespace BungieNetPlatform {
 
 	[ServiceContract]
-	//[ServiceKnownType(typeof(PlatformErrorCodes))]
 	public interface IPlatform {
 
 		[OperationContract]
