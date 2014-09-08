@@ -13,10 +13,12 @@ namespace BungieNetPlatform.Responses {
 
 		public FollowersResponse(JObject j) : base(j) {
 
+			//This does not include other followin information, eg. dateFollowed
 			Followers = new List<User>();
 
 			if(j["Response"]["results"] != null) {
-				j["Response"]["results"].ForEach(u => Followers.Add(new User(u.Value<JObject>())));
+				j["Response"]["results"].ForEach(u =>
+					Followers.Add(new User(u["user"].Value<JObject>())));
 			}
 
 		}
