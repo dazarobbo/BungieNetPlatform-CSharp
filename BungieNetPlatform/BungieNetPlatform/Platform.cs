@@ -285,6 +285,27 @@ namespace BungieNetPlatform {
 
 		}
 
+		public async Task<FollowersResponse> GetFollowers(
+			RequestingUser u,
+			int memberId,
+			int page = 1,
+			int itemsPerPage = 50
+			) {
+
+				JObject j = await NoAuthRequest(
+					string.Format(
+						"/Activity/User/{0}/Followers/?itemsperpage={1}&currentpage={2}",
+						memberId,
+						itemsPerPage,
+						page
+					),
+					u
+				);
+
+				return new FollowersResponse(j);
+
+		}
+
 
 
 

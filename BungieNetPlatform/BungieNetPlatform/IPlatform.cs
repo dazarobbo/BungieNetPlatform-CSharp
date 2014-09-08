@@ -86,6 +86,13 @@ namespace BungieNetPlatform {
 			int page = 1
 			);
 
+		[OperationContract]
+		Task<FollowersResponse> GetFollowers(
+			RequestingUser u,
+			int memberId,
+			int page = 1,
+			int itemsPerPage = 50
+			);
 
 	}
 }
