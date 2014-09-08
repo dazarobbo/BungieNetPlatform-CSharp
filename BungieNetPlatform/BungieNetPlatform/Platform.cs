@@ -306,7 +306,7 @@ namespace BungieNetPlatform {
 
 		}
 
-		public async Task<User> GetUserById(
+		public async Task<GetUserResponse> GetUserById(
 			RequestingUser u,
 			int memberId
 			) {
@@ -316,7 +316,7 @@ namespace BungieNetPlatform {
 					u
 				);
 
-				return new User(j);
+				return new GetUserResponse(j);
 
 		}
 
