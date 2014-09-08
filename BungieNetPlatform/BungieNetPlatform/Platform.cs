@@ -306,6 +306,19 @@ namespace BungieNetPlatform {
 
 		}
 
+		public async Task<User> GetUserById(
+			RequestingUser u,
+			int memberId
+			) {
+
+				JObject j = await NoAuthRequest(
+					string.Format("/User/GetBungieNetUserById/{0}/", memberId),
+					u
+				);
+
+				return new User(j);
+
+		}
 
 
 

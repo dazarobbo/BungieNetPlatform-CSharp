@@ -94,5 +94,11 @@ namespace BungieNetPlatform {
 			int itemsPerPage = 50
 			);
 
+		[OperationContract]
+		Task<User> GetUserById(
+			RequestingUser u,
+			int memberId
+			);
+
 	}
 }
