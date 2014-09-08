@@ -16,7 +16,7 @@ namespace BungieNetPlatform.Responses {
 			Followers = new List<User>();
 
 			if(j["Response"]["results"] != null) {
-				j["Response"]["results"].Cast<JObject>().ForEach(u => Followers.Add(new User(u)));
+				j["Response"]["results"].ForEach(u => Followers.Add(new User(u.Value<JObject>())));
 			}
 
 		}
