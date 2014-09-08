@@ -95,7 +95,7 @@ namespace BungieNetPlatform {
 			);
 
 		[OperationContract]
-		Task<GetUserResponse> GetUserById(
+		Task<UserResponse> GetUserById(
 			RequestingUser u,
 			int memberId
 			);

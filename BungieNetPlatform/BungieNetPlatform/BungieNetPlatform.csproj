@@ -113,7 +113,6 @@
     <Compile Include="Enums\TierType.cs" />
     <Compile Include="Enums\UnitType.cs" />
     <Compile Include="Enums\VendorItemStatus.cs" />
-    <Compile Include="Responses\GetUserResponse.cs" />
     <Compile Include="Responses\FollowersResponse.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="GroupDetail.cs" />
